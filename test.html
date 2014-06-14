@@ -1,0 +1,77 @@
+<script language="javascript">
+function selectID(obj){
+//获得对象所有选择项的值
+
+    var o=document.getElementById(obj).options;
+    var len=o.length;
+    var str="";
+    for (var i=0;i<len ;i++ )
+    {
+     if (o[i].selected==true)
+     {
+      str +=o[i].value+",";
+     }
+    }
+    return(str);
+   }
+function selectDel(obj)
+{
+ var dobj=document.getElementById(obj);
+ var selectValue=selectID(obj);//这里调用程序
+ var sv=selectValue.split(",");//这里一项一项的删除
+ for (var j=0;j<sv.length;j++)
+ {
+        for (var i = 0; i < dobj.options.length; i++) {       
+   selectValue=dobj.options[dobj.options.selectedIndex].value;
+            if (dobj.options[i].value == sv[j]) {       
+                 dobj.options.remove(i);       
+             }       
+         } 
+ }
+}
+function btnClick() {
+        var divMain = document.getElementById("divMain");
+        var input = document.createElement("input"); //Create button
+        input.type = "button";
+        input.value = "divbuttons";
+        divMain.appendChild(input);//add buttons to page
+
+}
+function displayDate()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<body>
+
+<select name="selectSid4" size="5" multiple id="selectSid" style="line-height:80px;">
+<option value="coutries1">U S</option>
+<option value="coutries2">French</option>
+<option value="coutries3">Japan</option>
+<option value="coutries4">Canada</option>
+</select>
+
+<input type="button" name="button2" id="button4" value="&lt;&lt;delete" onClick="selectDel('selectSid')">
+
+</body>
+</html>
