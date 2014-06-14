@@ -2,70 +2,133 @@
 <html>
 <head>
 <script>
-function displayDate()
-{
-document.getElementById("demo").innerHTML=Date();
-}
+	var Elements = new Array("coutries", "food", "animals", "sports");
+	
+	function displayDate(){
+		document.getElementById("demo").innerHTML=Date();
+	}
 
-function show(){ 
-alert(document.countries.options[document.coutries.selectedIndex].text); 
-} 
+	function show(){ 
+		alert(document.countries.options[document.coutries.selectedIndex].text); 
+	}
+
+	function btnClick(name) {
+        var divMain = document.getElementById(name);
+        var input = document.createElement("input"); //建立标签
+        input.type = "button";
+        input.value = name;
+        divMain.appendChild(input);//添加标签
+	}
+
 </script>
 </head>
-<body>
+	<body>
 
-<h1>This is only a test!!!</h1>
-<p id="demo">The keyword search</p>
+		<h1>This is only a test!!!</h1>
 
-<form>
-<input type="text" name="key_word"> 
-<button type="button" onclick="displayDate()">Search</button>
-</br>
-</form>
-<table width="200" border="0" cellspacing="0" cellpadding="0">  
-  <tr>  
-    <td>&nbsp;coutry</td>  
-    <td>&nbsp;food</td>  
-    <td>&nbsp;animal</td>  
-    <td>&nbsp;sports</td>  
-  </tr>  
-<tr>
-<td><SELECT NAME="coutries" MULTIPLE SIZE=5 >
-<OPTION VALUE="mushrooms">U S
-<OPTION VALUE="greenpeppers">Japan
-<OPTION VALUE="onions">Mexico
-<OPTION VALUE="tomatoes">Canada
-<OPTION VALUE="olives">French
-</SELECT></td>  
-    <td><SELECT NAME="food" MULTIPLE SIZE=5 >
-<OPTION VALUE="mushrooms">mushrooms
-<OPTION VALUE="greenpeppers">green peppers
-<OPTION VALUE="onions">onions
-<OPTION VALUE="tomatoes">tomatoes
-<OPTION VALUE="olives">olives
-</SELECT></td>  
-    <td><SELECT NAME="animals" MULTIPLE SIZE=5 >
-<OPTION VALUE="mushrooms">cat
-<OPTION VALUE="greenpeppers">dog
-<OPTION VALUE="onions">cow
-<OPTION VALUE="tomatoes">pig
-<OPTION VALUE="olives">chiken
-</SELECT></td>  
-    <td><SELECT NAME="sports" MULTIPLE SIZE=5 >
-<OPTION VALUE="mushrooms">basketball
-<OPTION VALUE="greenpeppers">football
-<OPTION VALUE="onions">tennis
-<OPTION VALUE="tomatoes">pingpong
-<OPTION VALUE="olives">volleyball
-</SELECT></td>  
+		<!--
+		<p id="demo">The keyword search</p>
 
-</tr>
-  
-</table>  
+		<form>
+			<input type="text" name="key_word"> 
+			<button type="button" onclick="displayDate()">Search</button>
+			</br>
+		</form>
+		-->
 
 
-<button type="button" onclick="show()">show date</button>
+		<table width="200" border="0" cellspacing="0" cellpadding="0">  
+		  	<tr>  
+			  	<td>&nbsp;coutry</td>  
+			  	<td>&nbsp;food</td>  
+			  	<td>&nbsp;animal</td>  
+		    	<td>&nbsp;sports</td>  
+		  	</tr>
 
-</body>
+			<tr>
+				<td>
+					<SELECT NAME="coutries" MULTIPLE SIZE=5 >
+						<OPTION VALUE="mushrooms">U S
+						<OPTION VALUE="greenpeppers">Japan
+						<OPTION VALUE="onions">Mexico
+						<OPTION VALUE="tomatoes">Canada
+						<OPTION VALUE="olives">French
+					</SELECT>
+					<button type="button" onclick="btnClick('Country_out')">
+						Add
+					</button>
+				</td>
+
+				<td>
+					<SELECT NAME="food" MULTIPLE SIZE=5 >
+						<OPTION VALUE="mushrooms">mushrooms
+						<OPTION VALUE="greenpeppers">green peppers
+						<OPTION VALUE="onions">onions
+						<OPTION VALUE="tomatoes">tomatoes
+						<OPTION VALUE="olives">olives
+					</SELECT>
+					<button type="button" onclick="btnClick('Food_out')">
+						Add
+					</button>
+				</td>  
+				    
+				<td>
+					<SELECT NAME="animals" MULTIPLE SIZE=5 >
+						<OPTION VALUE="mushrooms">cat
+						<OPTION VALUE="greenpeppers">dog
+						<OPTION VALUE="onions">cow
+						<OPTION VALUE="tomatoes">pig
+						<OPTION VALUE="olives">chiken
+					</SELECT>
+					<button type="button" onclick="btnClick('Animal_out')">
+						Add
+					</button>
+				</td>  
+
+				<td>
+					<SELECT NAME="sports" MULTIPLE SIZE=5 >
+						<OPTION VALUE="mushrooms">basketball
+						<OPTION VALUE="greenpeppers">football
+						<OPTION VALUE="onions">tennis
+						<OPTION VALUE="tomatoes">pingpong
+						<OPTION VALUE="olives">volleyball
+					</SELECT>
+					<button type="button" onclick="btnClick('Sports_out')">
+						Add
+					</button>
+				</td>  
+			</tr>
+		</table> 
+
+		</br>
+		</br>
+		</br>
+		</br>
+		
+		<div id = "Country_out">
+			<p>Country:</p>
+
+		</div>
+
+		<div id = "Food_out">
+			<p>Food:</p>
+		</div>
+
+		<div id = "Animal_out">
+			<p>Animal:</p>
+		</div>
+
+		<div id = "Sports_out">
+			<p>Sports:</p>
+		</div>
+
+		<!--<div id="divMain">
+   			<input type="button" value="abc" onclick="btnClick()"/>
+   			</div>
+   		-->
+
+   		<p> 
+
+	</body>
 </html> 
 
