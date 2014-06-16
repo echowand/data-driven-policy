@@ -3,7 +3,34 @@
 <head>
 <script>
 	var Elements = new Array("coutries", "food", "animals", "sports");
-	
+
+	function selectID(obj){
+	    var o = document.getElementById(obj).options;
+	    var len = o.length;
+	    var str = "";
+	    for(var i=0;i<len ;i++ ){
+	     	if (o[i].selected==true){
+	      		str +=o[i].value+",";
+	     	}
+	    }
+	    return(str);
+ 	}
+
+	function selectDel(obj, Div_name){
+	 	var dobj=document.getElementById(obj);
+	 	var selectValue=selectID(obj);
+	 	var sv=selectValue.split(",");
+	 	for (var j=0;j<sv.length;j++){
+	    	for (var i = 0; i < dobj.options.length; i++) {       
+	   			selectValue=dobj.options[dobj.options.selectedIndex].value;
+	            if (dobj.options[i].value == sv[j]){
+	                 dobj.options.remove(i);
+	                 btnClick(Div_name, sv[j]);      
+	            }       
+	        }
+	 	}
+	}
+
 	function displayDate(){
 		document.getElementById("demo").innerHTML=Date();
 	}
@@ -12,12 +39,12 @@
 		alert(document.countries.options[document.coutries.selectedIndex].text); 
 	}
 
-	function btnClick(name) {
-        var divMain = document.getElementById(name);
-        var input = document.createElement("input"); //建立标签
+	function btnClick(Div_name, Sel_name) {
+        var divMain = document.getElementById(Div_name);
+        var input = document.createElement("input"); 	/*build input tab.*/
         input.type = "button";
-        input.value = name;
-        divMain.appendChild(input);//添加标签
+        input.value = Sel_name;
+        divMain.appendChild(input);		/*add the newly built input tab to the corresponding division.*/
 	}
 
 </script>
@@ -47,53 +74,53 @@
 
 			<tr>
 				<td>
-					<SELECT NAME="coutries" MULTIPLE SIZE=5 >
+					<SELECT NAME="coutries" id="coun_tab" MULTIPLE SIZE=5 >
 						<OPTION VALUE="mushrooms">U S
 						<OPTION VALUE="greenpeppers">Japan
 						<OPTION VALUE="onions">Mexico
 						<OPTION VALUE="tomatoes">Canada
 						<OPTION VALUE="olives">French
 					</SELECT>
-					<button type="button" onclick="btnClick('Country_out')">
+					<button type="button" onClick="selectDel('coun_tab', 'Country_out')">
 						Add
 					</button>
 				</td>
 
 				<td>
-					<SELECT NAME="food" MULTIPLE SIZE=5 >
+					<SELECT NAME="food" id="food_tab" MULTIPLE SIZE=5 >
 						<OPTION VALUE="mushrooms">mushrooms
 						<OPTION VALUE="greenpeppers">green peppers
 						<OPTION VALUE="onions">onions
 						<OPTION VALUE="tomatoes">tomatoes
 						<OPTION VALUE="olives">olives
 					</SELECT>
-					<button type="button" onclick="btnClick('Food_out')">
+					<button type="button" onclick="selectDel('food_tab', 'Food_out')">
 						Add
 					</button>
 				</td>  
 				    
 				<td>
-					<SELECT NAME="animals" MULTIPLE SIZE=5 >
+					<SELECT NAME="animals" id="animals_tab" MULTIPLE SIZE=5 >
 						<OPTION VALUE="mushrooms">cat
 						<OPTION VALUE="greenpeppers">dog
 						<OPTION VALUE="onions">cow
 						<OPTION VALUE="tomatoes">pig
 						<OPTION VALUE="olives">chiken
 					</SELECT>
-					<button type="button" onclick="btnClick('Animal_out')">
+					<button type="button" onclick="selectDel('animals_tab', 'Animal_out')">
 						Add
 					</button>
 				</td>  
 
 				<td>
-					<SELECT NAME="sports" MULTIPLE SIZE=5 >
+					<SELECT NAME="sports" id="sports_tab" MULTIPLE SIZE=5 >
 						<OPTION VALUE="mushrooms">basketball
 						<OPTION VALUE="greenpeppers">football
 						<OPTION VALUE="onions">tennis
 						<OPTION VALUE="tomatoes">pingpong
 						<OPTION VALUE="olives">volleyball
 					</SELECT>
-					<button type="button" onclick="btnClick('Sports_out')">
+					<button type="button" onclick="selectDel('sports_tab', 'Sports_out')">
 						Add
 					</button>
 				</td>  
