@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package bing;
+//package bing;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -25,7 +25,7 @@ import org.json.simple.parser.ParseException;
  *
  * @author pumpkin
  */
-public class bing {
+public class Bing {
     
     /**
      * 
@@ -73,11 +73,11 @@ public class bing {
 //            
             
         } catch (MalformedURLException ex) {
-            Logger.getLogger(bing.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Bing.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(bing.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Bing.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ParseException ex) {
-            Logger.getLogger(bing.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Bing.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
     }
@@ -89,7 +89,7 @@ public class bing {
     
     public static void main (String[] args){
         
-        JSONArray results = bing.search("evil genius");
+        JSONArray results = Bing.search("evil genius");
         //iterate through the results, printing out each entry.
         for(Object res : results){
             JSONObject obj = (JSONObject)res;
