@@ -89,7 +89,17 @@ public class Bing {
     
     public static void main (String[] args){
         
-        JSONArray results = Bing.search("evil genius");
+        String search = new String();
+        if (args.length == 1) {
+            try {
+                search = new String(args[0]);
+                search = search.replace("\"", "");
+            } catch (NumberFormatException e) {
+               
+            }
+        }
+
+        JSONArray results = Bing.search(search);
         //iterate through the results, printing out each entry.
         for(Object res : results){
             JSONObject obj = (JSONObject)res;
