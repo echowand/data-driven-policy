@@ -101,7 +101,17 @@ public class Bing {
 
         JSONArray results = Bing.search(search);
         //iterate through the results, printing out each entry.
+        JSONArray newRes = new JSONArray();
         for(Object res : results){
+            JSONObject obj = (JSONObject)res;
+            String url = (String) obj.get("Url");
+            //System.out.println(search+" "+url);
+            JSONObject newObj = new JSONObject();
+            newObj.put(search, url);
+            newRes.add(newObj);
+        }
+
+        for(Object res : newRes){
             JSONObject obj = (JSONObject)res;
             System.out.println(obj);
         }
