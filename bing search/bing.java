@@ -20,7 +20,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
+import java.io.*;
 /**
  *
  * @author pumpkin
@@ -37,7 +37,7 @@ public class Bing {
         try {
             query = "'"+query+"'";
             String encodedQuery = URLEncoder.encode(query, "UTF-8");
-            System.out.println(encodedQuery);
+            //System.out.println(encodedQuery);
 //            URL url = new URL("https://api.datamarket.azure.com/Bing/Search/v1/Composite?Sources=%27web%27&Query=%27car%27");
 //            URL url = new URL("http://csb.stanford.edu/class/public/pages/sykes_webdesign/05_simple.html");
             String webPage = "https://api.datamarket.azure.com/Bing/Search/v1/Composite?Sources=%27web%27&Query="+encodedQuery+"&$format=JSON";
@@ -45,10 +45,10 @@ public class Bing {
             String password = "cefgNRl3OL4PrJJvssxkqLw0VKfYNCgyTe8wNXotUmQ";
 
             String authString = name + ":" + password;
-            System.out.println("auth string: " + authString);
+            //System.out.println("auth string: " + authString);
             byte[] authEncBytes = Base64.encodeBase64(authString.getBytes());
             String authStringEnc = new String(authEncBytes);
-            System.out.println("Base64 encoded auth string: " + authStringEnc);
+            //System.out.println("Base64 encoded auth string: " + authStringEnc);
 
             URL url = new URL(webPage);
             URLConnection urlConnection = url.openConnection();
@@ -102,19 +102,35 @@ public class Bing {
         JSONArray results = Bing.search(search);
         //iterate through the results, printing out each entry.
         JSONArray newRes = new JSONArray();
+        int i = 0;
         for(Object res : results){
             JSONObject obj = (JSONObject)res;
             String url = (String) obj.get("Url");
             //System.out.println(search+" "+url);
             JSONObject newObj = new JSONObject();
-            newObj.put(search, url);
+            i++;
+            newObj.put("id",i);
+            newObj.put("name", search);
+            newObj.put("url",url);
             newRes.add(newObj);
         }
-
+        //System.out.println("{");
+        StringWriter out = new StringWriter();
+        try{
+            newRes.writeJSONString(out);
+        }
+        catch(Exception e){}
+        String jsontxt = out.toString();
+        System.out.print(jsontxt);
+        i = 0;
         for(Object res : newRes){
             JSONObject obj = (JSONObject)res;
-            System.out.println(obj);
+            //if(i == newRes.size()-1)System.out.println(obj);
+            //else System.out.println(obj+",");
+            i++;
         }
+        //System.out.println(res.toJSONString());
+        //System.out.println("}");
         
     }
     
