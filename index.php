@@ -1,3 +1,7 @@
+
+<!--
+Important: Note that Javascript runs on client side and PHP runs on server side.
+-->
 <?php
 
 	$arr = array(	"Country" => array("US", "Japan", "Mexico", "Canada", "French"),
@@ -6,19 +10,22 @@
 					"Sports"  => array("basketball", "football", "tennis", "pingpong", "volleyball")
 			);
 
-	$arr_sellected = array(
-					"Country" => array(),
-					"Food"	  => array(),
-					"Animal"  => array(),	
-					"Sports"  => array()
-			);
 ?>
 
 
 <!DOCTYPE html>
 <html>
+	<p id = "testing">Cool</p>
 	<head>
 		<script language="javascript" type="text/javascript">
+
+			//displayDate is for testing...-->
+			function displayDate(){
+				document.getElementById("testing").innerHTML=Date();
+			}
+
+			var arr_sellected = {};
+
 			function selectID(obj){
 				var o = document.getElementById(obj).options;
 			    var len = o.length;
@@ -32,7 +39,7 @@
 			    return(str);
 		 	}
 
-			function selectDel(obj, Div_name){
+			function selectDel(obj, Div_name, att){
 			 	var dobj=document.getElementById(obj);
 			 	var selectValue=selectID(obj);
 			 	var sv=selectValue.split(",");
@@ -42,24 +49,38 @@
 			   			selectValue=dobj.options[dobj.options.selectedIndex].value;
 			            if (dobj.options[i].value == sv[j]){
 			                 dobj.options.remove(i);
-			                 add(Div_name, sv[j]);      
+			                 add(dobj, Div_name, sv[j], att);      
 			            }       
 			        }
 			 	}
 			}
 
-			function add(Div_name, Sel_name) {
+			function add(dobj, Div_name, Obj_name, att) {
 		        var divMain = document.getElementById(Div_name);
-		        var input = document.createElement("input"); 	/*build input tab.*/
-		        input.type = "button";
-		        input.
-		        input.value = Sel_name;
-		        input.onclick = 
-		        divMain.appendChild(input);						/*add the newly built input tab to the corresponding division.*/
-			}
+		        var but = document.createElement('button'); 	
+		        but.innerHTML = Obj_name;
+		        but.onclick = function(){
+		        	//Add option in Select tab
+		        	dobj.options.add(new Option(Obj_name));
 
-			function cancel(){
+		        	//Delete button in corresponding div
+		        	document.getElementById(Div_name).removeChild(this);
 
+		        	//Update arr_sellected
+		        	for (var i = 0; i < arr_sellected[att].length; i++){
+		        		if (arr_sellected[att][i] == this.innerHTML){
+		        			delete arr_sellected[att][i];
+		        			break;
+		        		}
+		        	}
+		        };
+		        divMain.appendChild(but);
+
+		        //Add the selected object to $arr_sellected 
+		        if(!(att in arr_sellected)){
+		        	arr_sellected[att] = [];
+		        }
+		        arr_sellected[att].push(Obj_name);
 			}
 
 		</script>
@@ -81,16 +102,17 @@
 			<tr>
 				<?php
 					foreach($arr as $att => $obj_arr){
+						sort($obj_arr);
 						$temp_id = $att . "_tab";
 						$temp_div = $att . "_div";
 						echo "<td>";
 							echo "<SELECT id =\"" . $temp_id ."\" MULTIPLE SIZE=5 >";
-								foreach($obj_arr as $obj){
+								foreach($obj_arr as $key => $obj){
 									echo "<OPTION VALUE= \"" . $obj . "\">" . $obj;
 								}
 							echo "</SELECT>";
 
-							echo "<button type = 'button' onclick = \"selectDel('" . $temp_id . "', '" . $temp_div . "')\">Add</button>";
+							echo "<button onclick = \"selectDel('" . $temp_id . "', '" . $temp_div . "', '" . $att ."')\">Add</button>";
 							
 						echo "</td>";
 					}
@@ -98,10 +120,7 @@
 			</tr>
 		</table> 
 
-		</br>
-		</br>
-		</br>
-		</br>
+		</br></br></br></br>
 		
 		<?php
 			foreach($arr as $att => $obj_arr){
@@ -112,6 +131,10 @@
 			}
 
 		?>
+
+		</br></br></br></br>
+
+		<button onclick = "">Search</button>
 
 	</body>
 </html> 
