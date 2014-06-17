@@ -1,7 +1,0 @@
-Bing search capabilities:
-
-1. search bing in any or all of: web, image, video, news, spelling
-2. search microsoft academic.
-
-
-*5000 queries a month for free (combined bing and microsoft academic)
