@@ -1,70 +1,70 @@
 <?php
 
-	$arr = array(	"country" => array("US", "Japan", "Mexico", "Canada", "French"),
-					"food"	  => array("mushrooms", "green peppers", "onions", "tomatoes", "olives"),
-					"animal"  => array("cat", "dog", "pig", "chicken"),	
-					"sports"  => array("basketball", "football", "tennis", "pingpong", "volleyball")
+	$arr = array(	"Country" => array("US", "Japan", "Mexico", "Canada", "French"),
+					"Food"	  => array("mushrooms", "green peppers", "onions", "tomatoes", "olives"),
+					"Animal"  => array("cat", "dog", "pig", "chicken"),	
+					"Sports"  => array("basketball", "football", "tennis", "pingpong", "volleyball")
+			);
+
+	$arr_sellected = array(
+					"Country" => array(),
+					"Food"	  => array(),
+					"Animal"  => array(),	
+					"Sports"  => array()
 			);
 ?>
 
 
 <!DOCTYPE html>
 <html>
-	<script type=\"text/javascript\">
-
-		function selectID(obj){
-		    var len = o.length;
-		    var str = "";
-		    for(var i=0;i<len ;i++ ){
-		     	if (o[i].selected==true){
-		      		str +=o[i].value+",";
-		     	}
-		    }
-		    return(str);
-	 	}
-
-		function selectDel(obj, Div_name){
-		 	var dobj=document.getElementById(obj);
-		 	var selectValue=selectID(obj);
-		 	var sv=selectValue.split(",");
-		 	for (var j=0;j<sv.length;j++){
-		    	for (var i = 0; i < dobj.options.length; i++) {       
-		   			selectValue=dobj.options[dobj.options.selectedIndex].value;
-		            if (dobj.options[i].value == sv[j]){
-		                 dobj.options.remove(i);
-		                 btnClick(Div_name, sv[j]);      
-		            }       
-		        }
-		 	}
-		}
-
-		function displayDate(){
-			document.getElementById("demo").innerHTML=Date();
-		}
-
-		function show(){ 
-			alert(document.countries.options[document.coutries.selectedIndex].text); 
-		}
-
-		function btnClick(Div_name, Sel_name) {
-	        var divMain = document.getElementById(Div_name);
-	        var input = document.createElement("input"); 	/*build input tab.*/
-	        input.type = "button";
-	        input.value = Sel_name;
-	        divMain.appendChild(input);						/*add the newly built input tab to the corresponding division.*/
-		}
-
-		function hello(){
-			var divMain = document.getElementById("");
-	        var input = document.createElement("input"); 	/*build input tab.*/
-	        input.type = "button";
-	        input.value = Sel_name;
-	        divMain.appendChild(input);	
-		}
-
-	</script>
-
 	<head>
+		<script language="javascript" type="text/javascript">
+			function selectID(obj){
+				var o = document.getElementById(obj).options;
+			    var len = o.length;
+			    var str = "";
+			    for(var i=0;i<len ;i++ ){
+			     	if (o[i].selected==true){
+			      		str +=o[i].value+",";
+			     	}
+			    }
+
+			    return(str);
+		 	}
+
+			function selectDel(obj, Div_name){
+			 	var dobj=document.getElementById(obj);
+			 	var selectValue=selectID(obj);
+			 	var sv=selectValue.split(",");
+
+			 	for (var j=0;j<sv.length;j++){
+			    	for (var i = 0; i < dobj.options.length; i++) {       
+			   			selectValue=dobj.options[dobj.options.selectedIndex].value;
+			            if (dobj.options[i].value == sv[j]){
+			                 dobj.options.remove(i);
+			                 add(Div_name, sv[j]);      
+			            }       
+			        }
+			 	}
+			}
+
+			function add(Div_name, Sel_name) {
+		        var divMain = document.getElementById(Div_name);
+		        var input = document.createElement("input"); 	/*build input tab.*/
+		        input.type = "button";
+		        input.
+		        input.value = Sel_name;
+		        input.onclick = 
+		        divMain.appendChild(input);						/*add the newly built input tab to the corresponding division.*/
+			}
+
+			function cancel(){
+
+			}
+
+		</script>
+
+	
 		<h1>This is only a test!!!</h1>
 	</head>
 
@@ -77,7 +77,7 @@
 		  			}
 		  		?>
 		  	</tr>
-
+		  	
 			<tr>
 				<?php
 					foreach($arr as $att => $obj_arr){
@@ -90,9 +90,8 @@
 								}
 							echo "</SELECT>";
 
-							print "<button type = 'button' onClick = \"selectDel('" . $temp_id . "', '" . $temp_div . "')\">Add</button>";
-							//echo "<button type = 'button' onClick = \"selectDel('" . $temp_id . "', '" . $temp_div . "')\">Add</button>";
-							//echo "<button type = 'button' onclick = \"hello()\">AAdd</button>";
+							echo "<button type = 'button' onclick = \"selectDel('" . $temp_id . "', '" . $temp_div . "')\">Add</button>";
+							
 						echo "</td>";
 					}
 				?>	
@@ -105,32 +104,14 @@
 		</br>
 		
 		<?php
-			/*foreach($arr as $att => $obj_arr){
+			foreach($arr as $att => $obj_arr){
 				$temp_div = $att . "_div";
 				echo "<div id = \"" . $temp_div . "\"> 
 							<p>" . $att . ":</p>
-					  <div>";
-			}*/
+					  </div>";
+			}
 
 		?>
-
-
-		<div id = "country_div">
-			<p>Country:</p>
-
-		</div>
-
-		<div id = "food_div">
-			<p>Food:</p>
-		</div>
-
-		<div id = "animal_div">
-			<p>Animal:</p>
-		</div>
-
-		<div id = "sports_div">
-			<p>Sports:</p>
-		</div>
 
 	</body>
 </html> 
