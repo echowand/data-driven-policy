@@ -2711,3 +2711,93 @@ INFO  - 2014-06-16 01:31:57.172; org.apache.solr.core.QuerySenderListener; Query
 INFO  - 2014-06-16 01:31:57.173; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@547ed94e[collection1] main{StandardDirectoryReader(segments_b:31:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _8(4.8):C50)}
 INFO  - 2014-06-16 01:31:57.174; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={commit=true} {commit=} 0 61
 INFO  - 2014-06-16 01:32:04.292; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=cat&indent=true&wt=json&_=1402896724278} hits=50 status=0 QTime=2 
+INFO  - 2014-06-16 17:52:17.644; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={} {add=[1 (1471105505705328640), 2 (1471105505776631808), 3 (1471105505779777536), 4 (1471105505780826112), 5 (1471105505783971840), 6 (1471105505786068992), 7 (1471105505791311872), 8 (1471105505792360448), 9 (1471105505793409024), 10 (1471105505794457600), ... (50 adds)]} 0 165
+INFO  - 2014-06-16 17:52:17.678; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-16 17:52:17.739; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_b,generation=11}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_c,generation=12}
+INFO  - 2014-06-16 17:52:17.741; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 12
+INFO  - 2014-06-16 17:52:17.749; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@73469b80[collection1] main
+INFO  - 2014-06-16 17:52:17.759; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@73469b80[collection1] main{StandardDirectoryReader(segments_c:35:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _9(4.8):C50)}
+INFO  - 2014-06-16 17:52:17.760; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-16 17:52:17.760; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-16 17:52:17.761; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@73469b80[collection1] main{StandardDirectoryReader(segments_c:35:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _9(4.8):C50)}
+INFO  - 2014-06-16 17:52:17.765; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={commit=true} {commit=} 0 87
+INFO  - 2014-06-16 17:52:43.072; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={} {add=[1 (1471105532453453824), 2 (1471105532461842432), 3 (1471105532462891008), 4 (1471105532463939584), 5 (1471105532467085312), 6 (1471105532468133888), 7 (1471105532469182464), 8 (1471105532473376768), 9 (1471105532474425344), 10 (1471105532475473920), ... (50 adds)]} 0 48
+INFO  - 2014-06-16 17:52:43.076; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-16 17:52:43.100; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_c,generation=12}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_d,generation=13}
+INFO  - 2014-06-16 17:52:43.100; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 13
+INFO  - 2014-06-16 17:52:43.104; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@730a0969[collection1] main
+INFO  - 2014-06-16 17:52:43.105; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@730a0969[collection1] main{StandardDirectoryReader(segments_d:39:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _a(4.8):C50)}
+INFO  - 2014-06-16 17:52:43.105; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-16 17:52:43.106; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-16 17:52:43.106; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@730a0969[collection1] main{StandardDirectoryReader(segments_d:39:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _a(4.8):C50)}
+INFO  - 2014-06-16 17:52:43.108; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={commit=true} {commit=} 0 32
+INFO  - 2014-06-16 18:46:37.485; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=cat&indent=true&wt=json&_=1402958797434} hits=50 status=0 QTime=18 
+INFO  - 2014-06-16 18:52:31.811; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={} {add=[1 (1471109295532670976), 2 (1471109295542108160), 3 (1471109295542108161), 4 (1471109295543156736), 5 (1471109295543156737), 6 (1471109295544205312), 7 (1471109295544205313), 8 (1471109295545253888), 9 (1471109295546302464), 10 (1471109295546302465), ... (50 adds)]} 0 36
+INFO  - 2014-06-16 18:52:31.818; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-16 18:52:31.845; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_d,generation=13}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_e,generation=14}
+INFO  - 2014-06-16 18:52:31.845; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 14
+INFO  - 2014-06-16 18:52:31.851; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@68a275d3[collection1] main
+INFO  - 2014-06-16 18:52:31.853; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-16 18:52:31.854; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@68a275d3[collection1] main{StandardDirectoryReader(segments_e:43:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _b(4.8):C50)}
+INFO  - 2014-06-16 18:52:31.854; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-16 18:52:31.855; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@68a275d3[collection1] main{StandardDirectoryReader(segments_e:43:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _b(4.8):C50)}
+INFO  - 2014-06-16 18:52:31.857; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={commit=true} {commit=} 0 39
+INFO  - 2014-06-16 18:54:50.699; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={} {} 0 1
+INFO  - 2014-06-16 18:54:50.705; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-16 18:54:50.705; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2014-06-16 18:54:50.706; org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2014-06-16 18:54:50.707; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-16 18:54:50.707; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={commit=true} {commit=} 0 2
+INFO  - 2014-06-16 18:56:10.257; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={} {add=[1 (1471109524595146752), 2 (1471109524600389632), 3 (1471109524601438208), 4 (1471109524601438209), 5 (1471109524602486784), 6 (1471109524603535360), 7 (1471109524603535361), 8 (1471109524604583936), 9 (1471109524604583937), 10 (1471109524605632512), ... (50 adds)]} 0 30
+INFO  - 2014-06-16 18:56:10.263; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-16 18:56:10.280; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_e,generation=14}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_f,generation=15}
+INFO  - 2014-06-16 18:56:10.281; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 15
+INFO  - 2014-06-16 18:56:10.285; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1c5da2a6[collection1] main
+INFO  - 2014-06-16 18:56:10.290; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@1c5da2a6[collection1] main{StandardDirectoryReader(segments_f:47:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _c(4.8):C50)}
+INFO  - 2014-06-16 18:56:10.291; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-16 18:56:10.291; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@1c5da2a6[collection1] main{StandardDirectoryReader(segments_f:47:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _c(4.8):C50)}
+INFO  - 2014-06-16 18:56:10.299; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-16 18:56:10.300; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={commit=true} {commit=} 0 37
+INFO  - 2014-06-16 18:56:19.985; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=dog%0a&indent=true&wt=json&_=1402959379957} hits=50 status=0 QTime=11 
+INFO  - 2014-06-16 18:58:46.445; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=cat&indent=true&wt=json&_=1402959526429} hits=0 status=0 QTime=3 
+INFO  - 2014-06-16 18:58:54.688; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=mao&indent=true&wt=json&_=1402959534674} hits=0 status=0 QTime=1 
+INFO  - 2014-06-16 18:59:02.306; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=du&indent=true&wt=json&_=1402959542294} hits=0 status=0 QTime=1 
+INFO  - 2014-06-16 18:59:03.208; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=du&indent=true&wt=json&_=1402959543196} hits=0 status=0 QTime=0 
+INFO  - 2014-06-16 18:59:11.351; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=dog&indent=true&wt=json&_=1402959551337} hits=50 status=0 QTime=1 
+INFO  - 2014-06-16 18:59:16.875; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=cat&indent=true&wt=json&_=1402959556861} hits=0 status=0 QTime=1 
+INFO  - 2014-06-16 19:10:52.062; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={} {add=[1 (1471110449235755008), 2 (1471110449246240768), 3 (1471110449246240769), 4 (1471110449247289344), 5 (1471110449247289345), 6 (1471110449248337920), 7 (1471110449248337921), 8 (1471110449248337922), 9 (1471110449249386496), 10 (1471110449250435072), ... (50 adds)]} 0 32
+INFO  - 2014-06-16 19:10:52.077; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-16 19:10:52.099; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_f,generation=15}
+	commit{dir=NRTCachingDirectory(NIOFSDirectory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/Users/guanqunmao/Project/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_g,generation=16}
+INFO  - 2014-06-16 19:10:52.099; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 16
+INFO  - 2014-06-16 19:10:52.103; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@57595555[collection1] main
+INFO  - 2014-06-16 19:10:52.105; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@57595555[collection1] main{StandardDirectoryReader(segments_g:51:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _d(4.8):C50)}
+INFO  - 2014-06-16 19:10:52.106; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-16 19:10:52.107; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@57595555[collection1] main{StandardDirectoryReader(segments_g:51:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _d(4.8):C50)}
+INFO  - 2014-06-16 19:10:52.106; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-16 19:10:52.109; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={commit=true} {commit=} 0 32
+INFO  - 2014-06-16 19:10:57.064; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=cat&indent=true&wt=json&_=1402960257039} hits=0 status=0 QTime=4 
+INFO  - 2014-06-16 19:11:03.998; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=worldcup&indent=true&wt=json&_=1402960263982} hits=50 status=0 QTime=4 
+INFO  - 2014-06-16 19:15:33.167; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=worldcup&indent=true&wt=json&_=1402960533150} hits=50 status=0 QTime=1 
+INFO  - 2014-06-16 19:16:22.116; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=worldcup&indent=true&wt=json&_=1402960582100} hits=50 status=0 QTime=1 
+INFO  - 2014-06-16 19:16:30.288; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=worldcup&indent=true&wt=json&_=1402960590274} hits=50 status=0 QTime=1 
+INFO  - 2014-06-16 19:16:38.456; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=cup&indent=true&wt=json&_=1402960598442} hits=21 status=0 QTime=2 
+INFO  - 2014-06-16 19:16:44.390; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=worldcup&indent=true&wt=json&_=1402960604374} hits=50 status=0 QTime=1 
+INFO  - 2014-06-16 19:16:49.805; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=cat&indent=true&wt=json&_=1402960609786} hits=0 status=0 QTime=0 
+INFO  - 2014-06-16 19:16:54.744; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=dog&indent=true&wt=json&_=1402960614730} hits=0 status=0 QTime=1 
+INFO  - 2014-06-16 20:56:16.620; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1402966576604} status=0 QTime=4 
+INFO  - 2014-06-16 20:56:16.787; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={wt=json&_=1402966576726} status=0 QTime=49 
+INFO  - 2014-06-16 20:56:20.406; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=dog&indent=true&wt=json&_=1402966580354} hits=0 status=0 QTime=8 
+INFO  - 2014-06-16 20:56:27.220; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1402966587210} status=0 QTime=0 
+INFO  - 2014-06-16 20:56:27.419; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={wt=json&_=1402966587395} status=0 QTime=14 
+INFO  - 2014-06-16 20:56:27.490; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=dog&indent=true&wt=json&_=1402966587472} hits=0 status=0 QTime=1 
+INFO  - 2014-06-16 20:56:36.228; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=dog&indent=true&wt=json&_=1402966596213} hits=0 status=0 QTime=1 
