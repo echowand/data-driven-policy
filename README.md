@@ -8,11 +8,11 @@ This repository was created by Guanqun Mao, Xinpi Du, and Weijie Huo @Grey House
 
 How to preserve keywords into solr database:
 
-Start Solr server first (Tutorial: https://lucene.apache.org/solr/tutorial.html ), keep it running. 
+First start the server, go to direcotory: ./solr-4.8.1/example, run:
+	java -jar start.jar
+( For more information about the SOLR server, please go to tutorial on https://lucene.apache.org/solr/tutorial.html. )
 
-	
-	
-	
+
 Find the directory bing-search directory, run: 
 	./run.sh KEYWORD
 run.sh searches KEYWORD from bing server to get the relevant urls, then it will store {KEYWORD, URLS} into a json file. The json file would be posted to solr server finally. 
