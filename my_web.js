@@ -1,7 +1,7 @@
 //Find the selected the element and retern them as a stream 
 
 var database = {};
-database["Country"] = ["US", "Japan", "Mexico", "Canada", "French"];
+database["Country"] = ["US", "Japan", "Mexico", "Canada", "France"];
 database["Food"] = ["mushrooms", "green peppers", "onions", "tomatoes", "olives"];
 database["Animal"] = ["cat", "dog", "pig", "chicken"];
 database["Sports"] = ["basketball", "football", "tennis", "pingpong", "volleyball"];
