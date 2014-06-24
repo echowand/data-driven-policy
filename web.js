@@ -17,74 +17,62 @@ var url = require('url');
 
 var path = require('path');
 
-var pag_source = "\
-<!DOCTYPE html>\
-<html>\
-<head>\
-  <meta charset=\"utf-8\">\
-  <title>Policy Decision Helper</title>\
-  <link rel=\"stylesheet\" href=\"http://evolvingweb.github.io/ajax-solr/examples/reuters/css/reuters.css\">\
-  <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>\
-  <script src=\"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js\"></script>\
-  <link rel=\"stylesheet\" href=\"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css\">\
-</head>\
-<body>\
-  <div id=\"wrap\">\
-    <div id=\"header\">\
-      <h1>Policy Decision Helper</h1>\
-    </div>\
-\
-    <div class=\"right\">\
-      <div id=\"result\">\
-        <div id=\"navigation\">\
-          <ul id=\"pager\"></ul>\
-          <div id=\"pager-header\"></div>\
-        </div>\
-        <div id=\"docs\"></div>\
-      </div>\
-    </div>\
-\
-    <div class=\"left\">\
-      <h2>Current Selection</h2>\
-      <ul id=\"selection\"></ul>\
-\
-      <h2>Search</h2>\
-      <span id=\"search_help\">(press ESC to close suggestions)</span>\
-      <ul id=\"search\">\
-        <input type=\"text\" id=\"query\" name=\"query\" autocomplete=\"off\">\
-      </ul>\
-\
-      <h2>Top Topics</h2>\
-      <div class=\"tagcloud\" id=\"topics\"></div>\
-\
-      <div class=\"clear\"></div>\
-    </div>\
-    <div class=\"clear\"></div>\
-  </div>\
-</body>\
-</html>\
-";
+var getContentType=function(filePath){
+	var contentType="";
+	var extension=path.extname(filePath);
+	switch(extension){
+		case ".html":
+			contentType= "text/html";
+			break;
+		case ".js":
+			contentType="text/javascript";
+			break;
+		case ".css":
+			contentType="text/css";
+			break;
+		case ".gif":
+			contentType="image/gif";
+			break;
+		case ".jpg":
+			contentType="image/jpeg";
+			break;
+		case ".png":
+			contentType="image/png";
+			break;
+		case ".ico":
+			contentType="image/icon";
+			break;
+		default:
+			contentType="application/octet-stream";
+	}
+	return contentType; 
+}
 
 var httpserver = http.createServer(function (request, response) {
 	var pathName = url.parse(request.url).pathname;
-	/*var ext = pathName.match(/(\.[^.]+|)$/)[0];
-	if (ext == ".css" ){
-		fs.readFile("."+request.url, 'utf-8',function (err, data) {
-			if (err) throw err; 
-			response.writeHead(200, { 
-			"Content-Type": { 
-			".css":"text/css", 
-	".js":"application/javascript", 
-}[ext] 
-}); 
-response.write(data); 
-response.end(); 
-}); 
-	}*/
+	pathName = "." + pathName;
+	if(pathName.charAt(pathName.length-1)=="/"){
+		pathName+="index.html";
+	}
 
-	response.writeHead(200, {'Content-Type': 'text/html'});
-	response.write(pag_source);
-	response.end();
+	console.log(pathName);
+
+	var filePath = pathName;
+	fs.exists(filePath, function(exists){
+		if(exists){
+			fs.readFile(filePath, 'utf-8',function (err, data) {
+				if (err) throw err;
+				response.writeHead(200, {"Content-Type": getContentType(filePath) });
+				response.write(data);
+				response.end();
+			}); 
+		}
+		else{
+			response.writeHead(404, {"Content-Type": "text/html"});
+			response.end("<h1>404 Not Found</h1>");
+		}
+	});
+	
 })
 httpserver.listen(8080);  
   
