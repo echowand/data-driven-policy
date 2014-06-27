@@ -2801,3 +2801,426 @@ INFO  - 2014-06-16 20:56:27.220; org.apache.solr.servlet.SolrDispatchFilter; [ad
 INFO  - 2014-06-16 20:56:27.419; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={wt=json&_=1402966587395} status=0 QTime=14 
 INFO  - 2014-06-16 20:56:27.490; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=dog&indent=true&wt=json&_=1402966587472} hits=0 status=0 QTime=1 
 INFO  - 2014-06-16 20:56:36.228; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=dog&indent=true&wt=json&_=1402966596213} hits=0 status=0 QTime=1 
+INFO  - 2014-06-22 15:18:45.660; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-06-22 15:18:45.686; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/contexts at interval 0
+INFO  - 2014-06-22 15:18:45.694; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/contexts/solr-jetty-context.xml
+INFO  - 2014-06-22 15:18:45.884; org.eclipse.jetty.webapp.WebInfConfiguration; Extract jar:file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/webapps/solr.war!/ to /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr-webapp/webapp
+INFO  - 2014-06-22 15:18:48.457; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-06-22 15:18:48.530; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-06-22 15:18:48.548; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-06-22 15:18:48.548; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2014-06-22 15:18:48.549; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2014-06-22 15:18:48.691; org.apache.solr.core.ConfigSolr; Loading container configuration from /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/solr.xml
+INFO  - 2014-06-22 15:18:48.822; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr
+INFO  - 2014-06-22 15:18:48.830; org.apache.solr.core.CoreContainer; New CoreContainer 1358196854
+INFO  - 2014-06-22 15:18:48.832; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2014-06-22 15:18:48.852; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-06-22 15:18:48.852; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2014-06-22 15:18:48.858; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-06-22 15:18:48.861; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-06-22 15:18:48.861; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-06-22 15:18:48.861; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-06-22 15:18:48.862; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-06-22 15:18:48.862; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-06-22 15:18:48.862; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-06-22 15:18:49.002; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-06-22 15:18:49.004; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-06-22 15:18:49.005; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2014-06-22 15:18:49.043; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr
+INFO  - 2014-06-22 15:18:49.056; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/
+INFO  - 2014-06-22 15:18:49.056; org.apache.solr.core.CorePropertiesLocator; Found 1 core definitions
+INFO  - 2014-06-22 15:18:49.058; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/'
+INFO  - 2014-06-22 15:18:49.160; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2014-06-22 15:18:49.165; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2014-06-22 15:18:49.165; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2014-06-22 15:18:49.165; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.166; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.166; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2014-06-22 15:18:49.166; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - 2014-06-22 15:18:49.167; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.167; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/asm-3.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.167; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2014-06-22 15:18:49.168; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+INFO  - 2014-06-22 15:18:49.168; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+INFO  - 2014-06-22 15:18:49.168; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2014-06-22 15:18:49.169; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+INFO  - 2014-06-22 15:18:49.169; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2014-06-22 15:18:49.169; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - 2014-06-22 15:18:49.169; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+INFO  - 2014-06-22 15:18:49.170; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2014-06-22 15:18:49.170; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/poi-ooxml-schemas-3.10-beta2.jar' to classloader
+INFO  - 2014-06-22 15:18:49.170; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+INFO  - 2014-06-22 15:18:49.171; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2014-06-22 15:18:49.171; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.171; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.172; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+INFO  - 2014-06-22 15:18:49.172; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.172; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/xz-1.2.jar' to classloader
+INFO  - 2014-06-22 15:18:49.173; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+INFO  - 2014-06-22 15:18:49.173; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2014-06-22 15:18:49.173; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.174; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/poi-ooxml-3.10-beta2.jar' to classloader
+INFO  - 2014-06-22 15:18:49.174; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/poi-3.10-beta2.jar' to classloader
+INFO  - 2014-06-22 15:18:49.174; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+INFO  - 2014-06-22 15:18:49.175; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+INFO  - 2014-06-22 15:18:49.175; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/poi-scratchpad-3.10-beta2.jar' to classloader
+INFO  - 2014-06-22 15:18:49.178; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/dist/solr-cell-4.8.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.180; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+INFO  - 2014-06-22 15:18:49.180; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+INFO  - 2014-06-22 15:18:49.181; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+INFO  - 2014-06-22 15:18:49.181; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2014-06-22 15:18:49.181; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.182; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+INFO  - 2014-06-22 15:18:49.182; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2014-06-22 15:18:49.182; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+INFO  - 2014-06-22 15:18:49.184; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/dist/solr-clustering-4.8.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.185; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2014-06-22 15:18:49.186; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2014-06-22 15:18:49.187; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/dist/solr-langid-4.8.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.189; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.189; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2014-06-22 15:18:49.190; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - 2014-06-22 15:18:49.190; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2014-06-22 15:18:49.191; org.apache.solr.core.SolrResourceLoader; Adding 'file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/dist/solr-velocity-4.8.1.jar' to classloader
+INFO  - 2014-06-22 15:18:49.369; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2014-06-22 15:18:49.376; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_48
+INFO  - 2014-06-22 15:18:49.535; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-06-22 15:18:49.544; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-06-22 15:18:49.639; org.apache.solr.schema.IndexSchema; [collection1] Schema name=example
+WARN  - 2014-06-22 15:18:49.781; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-22 15:18:49.787; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-22 15:18:49.793; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.FloatField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-22 15:18:49.799; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-22 15:18:49.804; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-22 15:18:50.340; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.ThaiWordFilterFactory]. Please consult documentation how to replace it accordingly.
+INFO  - 2014-06-22 15:18:50.385; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-06-22 15:18:50.400; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+INFO  - 2014-06-22 15:18:50.400; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+INFO  - 2014-06-22 15:18:50.522; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2014-06-22 15:18:50.532; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2014-06-22 15:18:50.705; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using configuration from instancedir /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/
+INFO  - 2014-06-22 15:18:50.722; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2014-06-22 15:18:50.731; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/, dataDir=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/
+INFO  - 2014-06-22 15:18:50.732; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2014-06-22 15:18:50.737; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2014-06-22 15:18:50.737; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2014-06-22 15:18:50.753; org.apache.solr.core.CachingDirectoryFactory; return new directory for /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data
+INFO  - 2014-06-22 15:18:50.755; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index/
+INFO  - 2014-06-22 15:18:50.757; org.apache.solr.core.CachingDirectoryFactory; return new directory for /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index
+INFO  - 2014-06-22 15:18:50.774; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2014-06-22 15:18:50.774; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2014-06-22 15:18:50.774; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2014-06-22 15:18:50.779; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2014-06-22 15:18:50.779; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2014-06-22 15:18:50.890; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-06-22 15:18:50.901; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.901; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.903; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-06-22 15:18:50.904; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.907; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2014-06-22 15:18:50.908; org.apache.solr.core.RequestHandlers; created /update/json: solr.UpdateRequestHandler
+INFO  - 2014-06-22 15:18:50.908; org.apache.solr.core.RequestHandlers; created /update/csv: solr.UpdateRequestHandler
+INFO  - 2014-06-22 15:18:50.908; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-06-22 15:18:50.909; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-06-22 15:18:50.909; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-06-22 15:18:50.909; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2014-06-22 15:18:50.909; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-06-22 15:18:50.910; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-06-22 15:18:50.912; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2014-06-22 15:18:50.915; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-06-22 15:18:50.917; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2014-06-22 15:18:50.928; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-06-22 15:18:50.928; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.929; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.929; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.929; org.apache.solr.core.RequestHandlers; created /suggest: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.929; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.929; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.930; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.930; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.930; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.930; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2014-06-22 15:18:50.953; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-22 15:18:50.956; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-22 15:18:50.956; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-22 15:18:50.986; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2014-06-22 15:18:50.986; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-06-22 15:18:51.043; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_g,generation=16}
+INFO  - 2014-06-22 15:18:51.044; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 16
+INFO  - 2014-06-22 15:18:51.094; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5d37ce06[collection1] main
+INFO  - 2014-06-22 15:18:51.100; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+INFO  - 2014-06-22 15:18:51.101; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf/}
+INFO  - 2014-06-22 15:18:51.102; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+WARN  - 2014-06-22 15:18:51.103; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-06-22 15:18:51.103; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+INFO  - 2014-06-22 15:18:51.103; org.apache.solr.rest.RestManager; Initializing 2 registered ManagedResources
+INFO  - 2014-06-22 15:18:51.104; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_stopwords_english.json using file:dir=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+INFO  - 2014-06-22 15:18:51.110; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+INFO  - 2014-06-22 15:18:51.110; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+INFO  - 2014-06-22 15:18:51.111; org.apache.solr.rest.schema.analysis.ManagedWordSetResource; Loaded 35 words for /schema/analysis/stopwords/english
+INFO  - 2014-06-22 15:18:51.111; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/stopwords/english
+INFO  - 2014-06-22 15:18:51.112; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_synonyms_english.json using file:dir=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+INFO  - 2014-06-22 15:18:51.113; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+INFO  - 2014-06-22 15:18:51.113; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+INFO  - 2014-06-22 15:18:51.113; org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager; Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+INFO  - 2014-06-22 15:18:51.116; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/synonyms/english
+INFO  - 2014-06-22 15:18:51.116; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2014-06-22 15:18:51.124; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2014-06-22 15:18:51.131; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2014-06-22 15:18:51.133; org.apache.solr.handler.component.SuggestComponent; Initializing SuggestComponent
+INFO  - 2014-06-22 15:18:51.134; org.apache.solr.spelling.suggest.SolrSuggester; init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2014-06-22 15:18:51.152; org.apache.solr.spelling.suggest.SolrSuggester; Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2014-06-22 15:18:51.154; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf/elevate.xml
+INFO  - 2014-06-22 15:18:51.186; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2014-06-22 15:18:51.186; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@5d37ce06[collection1] main{StandardDirectoryReader(segments_g:51:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _d(4.8):C50)}
+INFO  - 2014-06-22 15:18:51.187; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2014-06-22 15:18:51.189; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example
+INFO  - 2014-06-22 15:18:51.189; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-06-22 15:18:51.219; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2014-06-22 15:18:51.243; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=1 status=0 QTime=56 
+INFO  - 2014-06-22 15:18:51.251; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-22 15:18:51.251; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2014-06-22 15:18:51.251; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2014-06-22 15:18:51.251; org.apache.solr.handler.component.SuggestComponent$SuggesterListener; Loading suggester index for: mySuggester
+INFO  - 2014-06-22 15:18:51.251; org.apache.solr.spelling.suggest.SolrSuggester; reload()
+INFO  - 2014-06-22 15:18:51.252; org.apache.solr.spelling.suggest.SolrSuggester; build()
+INFO  - 2014-06-22 15:18:51.293; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@5d37ce06[collection1] main{StandardDirectoryReader(segments_g:51:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _d(4.8):C50)}
+INFO  - 2014-06-22 15:19:34.121; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={} {} 0 8
+INFO  - 2014-06-22 15:19:34.131; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-22 15:19:34.131; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2014-06-22 15:19:34.132; org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2014-06-22 15:19:34.132; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-22 15:19:34.133; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={commit=true} {commit=} 0 3
+INFO  - 2014-06-22 15:19:53.008; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1403464793001&wt=json} status=0 QTime=2 
+INFO  - 2014-06-22 15:19:53.040; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={_=1403464793030&wt=json} status=0 QTime=7 
+INFO  - 2014-06-22 15:20:01.681; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=solr&wt=xml} hits=0 status=0 QTime=2 
+INFO  - 2014-06-22 15:20:07.656; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1403464807651&wt=json} status=0 QTime=1 
+INFO  - 2014-06-22 15:20:07.679; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={_=1403464807674&wt=json} status=0 QTime=3 
+INFO  - 2014-06-22 15:20:07.734; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={indent=true&q=video&_=1403464807726&wt=json} hits=0 status=0 QTime=1 
+INFO  - 2014-06-22 15:20:19.223; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={indent=true&q=c&_=1403464819219&wt=json} hits=0 status=0 QTime=1 
+INFO  - 2014-06-22 15:20:30.021; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={indent=true&q=*:*&_=1403464830017&wt=json} hits=55 status=0 QTime=1 
+INFO  - 2014-06-22 15:20:45.075; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={indent=true&q=*:*&_=1403464845072&wt=json} hits=55 status=0 QTime=0 
+INFO  - 2014-06-22 16:04:36.006; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1403467475997&wt=json} status=0 QTime=1 
+INFO  - 2014-06-22 16:04:36.053; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={_=1403467476026&wt=json} status=0 QTime=25 
+INFO  - 2014-06-22 16:04:36.166; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={indent=true&q=*:*&_=1403467476144&wt=json} hits=55 status=0 QTime=1 
+INFO  - 2014-06-22 16:17:23.269; org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:8983
+INFO  - 2014-06-22 16:17:23.271; org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr-webapp/webapp/},/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/webapps/solr.war
+INFO  - 2014-06-22 16:17:24.271; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1358196854
+INFO  - 2014-06-22 16:17:24.272; org.apache.solr.core.SolrCore; [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@5d8654c0
+INFO  - 2014-06-22 16:17:24.275; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=1,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=8627,transaction_logs_total_number=2}
+INFO  - 2014-06-22 16:17:24.276; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2014-06-22 16:17:24.276; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2014-06-22 16:17:24.276; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2014-06-22 16:17:24.281; org.apache.solr.core.SolrCore; [collection1] Closing main searcher on request.
+INFO  - 2014-06-22 16:17:24.284; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2014-06-22 16:17:24.284; org.apache.solr.core.CachingDirectoryFactory; looking to close /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data [CachedDir<<refCount=0;path=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data;done=false>>]
+INFO  - 2014-06-22 16:17:24.285; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data
+INFO  - 2014-06-22 16:17:24.285; org.apache.solr.core.CachingDirectoryFactory; looking to close /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index [CachedDir<<refCount=0;path=/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index;done=false>>]
+INFO  - 2014-06-22 16:17:24.285; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index
+INFO  - 2014-06-22 16:17:24.288; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr-webapp/webapp/},/u/data/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/webapps/solr.war
+INFO  - 2014-06-22 18:20:58.829; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-06-22 18:20:58.884; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/contexts at interval 0
+INFO  - 2014-06-22 18:20:58.896; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/contexts/solr-jetty-context.xml
+INFO  - 2014-06-22 18:21:00.440; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-06-22 18:21:00.507; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-06-22 18:21:00.539; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-06-22 18:21:00.540; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2014-06-22 18:21:00.540; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2014-06-22 18:21:00.667; org.apache.solr.core.ConfigSolr; Loading container configuration from /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/solr.xml
+INFO  - 2014-06-22 18:21:00.852; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr
+INFO  - 2014-06-22 18:21:00.860; org.apache.solr.core.CoreContainer; New CoreContainer 522208101
+INFO  - 2014-06-22 18:21:00.861; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2014-06-22 18:21:00.874; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-06-22 18:21:00.875; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2014-06-22 18:21:00.879; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-06-22 18:21:00.880; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-06-22 18:21:00.882; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-06-22 18:21:00.882; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-06-22 18:21:00.882; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-06-22 18:21:00.883; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-06-22 18:21:00.883; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-06-22 18:21:01.001; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-06-22 18:21:01.002; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-06-22 18:21:01.003; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2014-06-22 18:21:01.040; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr
+INFO  - 2014-06-22 18:21:01.048; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/
+INFO  - 2014-06-22 18:21:01.048; org.apache.solr.core.CorePropertiesLocator; Found 1 core definitions
+INFO  - 2014-06-22 18:21:01.050; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/'
+INFO  - 2014-06-22 18:21:01.252; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2014-06-22 18:21:01.258; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2014-06-22 18:21:01.259; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2014-06-22 18:21:01.259; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.260; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.261; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2014-06-22 18:21:01.261; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - 2014-06-22 18:21:01.262; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.262; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/asm-3.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.263; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2014-06-22 18:21:01.263; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+INFO  - 2014-06-22 18:21:01.264; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+INFO  - 2014-06-22 18:21:01.264; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2014-06-22 18:21:01.265; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+INFO  - 2014-06-22 18:21:01.266; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2014-06-22 18:21:01.266; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - 2014-06-22 18:21:01.267; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+INFO  - 2014-06-22 18:21:01.267; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2014-06-22 18:21:01.268; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/poi-ooxml-schemas-3.10-beta2.jar' to classloader
+INFO  - 2014-06-22 18:21:01.268; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+INFO  - 2014-06-22 18:21:01.269; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2014-06-22 18:21:01.270; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.270; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.271; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+INFO  - 2014-06-22 18:21:01.271; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.272; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/xz-1.2.jar' to classloader
+INFO  - 2014-06-22 18:21:01.272; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+INFO  - 2014-06-22 18:21:01.273; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2014-06-22 18:21:01.274; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.274; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/poi-ooxml-3.10-beta2.jar' to classloader
+INFO  - 2014-06-22 18:21:01.275; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/poi-3.10-beta2.jar' to classloader
+INFO  - 2014-06-22 18:21:01.275; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+INFO  - 2014-06-22 18:21:01.276; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+INFO  - 2014-06-22 18:21:01.277; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/extraction/lib/poi-scratchpad-3.10-beta2.jar' to classloader
+INFO  - 2014-06-22 18:21:01.279; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/dist/solr-cell-4.8.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.281; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+INFO  - 2014-06-22 18:21:01.282; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+INFO  - 2014-06-22 18:21:01.282; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+INFO  - 2014-06-22 18:21:01.283; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2014-06-22 18:21:01.284; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.284; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+INFO  - 2014-06-22 18:21:01.285; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2014-06-22 18:21:01.285; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+INFO  - 2014-06-22 18:21:01.287; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/dist/solr-clustering-4.8.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.289; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2014-06-22 18:21:01.289; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2014-06-22 18:21:01.291; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/dist/solr-langid-4.8.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.293; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.293; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2014-06-22 18:21:01.294; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - 2014-06-22 18:21:01.294; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2014-06-22 18:21:01.296; org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/dist/solr-velocity-4.8.1.jar' to classloader
+INFO  - 2014-06-22 18:21:01.591; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2014-06-22 18:21:01.597; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_48
+INFO  - 2014-06-22 18:21:01.729; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-06-22 18:21:01.735; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-06-22 18:21:01.818; org.apache.solr.schema.IndexSchema; [collection1] Schema name=example
+WARN  - 2014-06-22 18:21:01.964; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-22 18:21:01.970; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-22 18:21:01.976; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.FloatField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-22 18:21:01.982; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-22 18:21:01.987; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-06-22 18:21:02.479; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.ThaiWordFilterFactory]. Please consult documentation how to replace it accordingly.
+INFO  - 2014-06-22 18:21:02.523; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-06-22 18:21:02.536; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+INFO  - 2014-06-22 18:21:02.537; org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+INFO  - 2014-06-22 18:21:02.632; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2014-06-22 18:21:02.641; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2014-06-22 18:21:02.753; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using configuration from instancedir /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/
+INFO  - 2014-06-22 18:21:02.768; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2014-06-22 18:21:02.775; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/, dataDir=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/
+INFO  - 2014-06-22 18:21:02.780; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2014-06-22 18:21:02.784; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2014-06-22 18:21:02.784; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2014-06-22 18:21:02.802; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data
+INFO  - 2014-06-22 18:21:02.814; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index/
+INFO  - 2014-06-22 18:21:02.814; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index
+INFO  - 2014-06-22 18:21:02.833; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2014-06-22 18:21:02.833; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2014-06-22 18:21:02.834; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2014-06-22 18:21:02.837; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2014-06-22 18:21:02.838; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2014-06-22 18:21:02.962; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-06-22 18:21:02.971; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.972; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.973; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-06-22 18:21:02.974; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.976; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2014-06-22 18:21:02.977; org.apache.solr.core.RequestHandlers; created /update/json: solr.UpdateRequestHandler
+INFO  - 2014-06-22 18:21:02.977; org.apache.solr.core.RequestHandlers; created /update/csv: solr.UpdateRequestHandler
+INFO  - 2014-06-22 18:21:02.977; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-06-22 18:21:02.978; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-06-22 18:21:02.978; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-06-22 18:21:02.978; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2014-06-22 18:21:02.978; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-06-22 18:21:02.978; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-06-22 18:21:02.980; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2014-06-22 18:21:02.982; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-06-22 18:21:02.984; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2014-06-22 18:21:02.993; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-06-22 18:21:02.993; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.993; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.993; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.993; org.apache.solr.core.RequestHandlers; created /suggest: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.994; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.994; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.994; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.994; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.994; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-06-22 18:21:02.994; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2014-06-22 18:21:03.009; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-22 18:21:03.011; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-22 18:21:03.011; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-06-22 18:21:03.034; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2014-06-22 18:21:03.034; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-06-22 18:21:03.076; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_g,generation=16}
+INFO  - 2014-06-22 18:21:03.076; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 16
+INFO  - 2014-06-22 18:21:03.108; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4dd5b173[collection1] main
+INFO  - 2014-06-22 18:21:03.114; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+INFO  - 2014-06-22 18:21:03.114; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf/}
+INFO  - 2014-06-22 18:21:03.116; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+WARN  - 2014-06-22 18:21:03.116; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-06-22 18:21:03.116; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+INFO  - 2014-06-22 18:21:03.116; org.apache.solr.rest.RestManager; Initializing 2 registered ManagedResources
+INFO  - 2014-06-22 18:21:03.117; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_stopwords_english.json using file:dir=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+INFO  - 2014-06-22 18:21:03.121; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+INFO  - 2014-06-22 18:21:03.122; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+INFO  - 2014-06-22 18:21:03.122; org.apache.solr.rest.schema.analysis.ManagedWordSetResource; Loaded 35 words for /schema/analysis/stopwords/english
+INFO  - 2014-06-22 18:21:03.122; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/stopwords/english
+INFO  - 2014-06-22 18:21:03.123; org.apache.solr.rest.ManagedResourceStorage; Reading _schema_analysis_synonyms_english.json using file:dir=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+INFO  - 2014-06-22 18:21:03.123; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf
+INFO  - 2014-06-22 18:21:03.123; org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+INFO  - 2014-06-22 18:21:03.124; org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager; Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+INFO  - 2014-06-22 18:21:03.126; org.apache.solr.rest.ManagedResource; Notified 1 observers of /schema/analysis/synonyms/english
+INFO  - 2014-06-22 18:21:03.126; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2014-06-22 18:21:03.133; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2014-06-22 18:21:03.140; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2014-06-22 18:21:03.141; org.apache.solr.handler.component.SuggestComponent; Initializing SuggestComponent
+INFO  - 2014-06-22 18:21:03.142; org.apache.solr.spelling.suggest.SolrSuggester; init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2014-06-22 18:21:03.158; org.apache.solr.spelling.suggest.SolrSuggester; Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2014-06-22 18:21:03.159; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/conf/elevate.xml
+INFO  - 2014-06-22 18:21:03.194; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2014-06-22 18:21:03.196; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@4dd5b173[collection1] main{StandardDirectoryReader(segments_g:51:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _d(4.8):C50)}
+INFO  - 2014-06-22 18:21:03.197; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2014-06-22 18:21:03.201; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example
+INFO  - 2014-06-22 18:21:03.202; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-06-22 18:21:03.263; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2014-06-22 18:21:03.304; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=1 status=0 QTime=105 
+INFO  - 2014-06-22 18:21:03.318; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-06-22 18:21:03.318; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2014-06-22 18:21:03.319; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2014-06-22 18:21:03.319; org.apache.solr.handler.component.SuggestComponent$SuggesterListener; Loading suggester index for: mySuggester
+INFO  - 2014-06-22 18:21:03.320; org.apache.solr.spelling.suggest.SolrSuggester; reload()
+INFO  - 2014-06-22 18:21:03.320; org.apache.solr.spelling.suggest.SolrSuggester; build()
+INFO  - 2014-06-22 18:21:03.395; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@4dd5b173[collection1] main{StandardDirectoryReader(segments_g:51:nrt _5(4.8):C4 _7(4.8):C50/49:delGen=1 _d(4.8):C50)}
+INFO  - 2014-06-22 18:21:29.842; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={} {} 0 14
+INFO  - 2014-06-22 18:21:29.859; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-22 18:21:29.859; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2014-06-22 18:21:29.861; org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2014-06-22 18:21:29.862; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-22 18:21:29.863; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={commit=true} {commit=} 0 5
+INFO  - 2014-06-22 20:53:44.888; org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:8983
+INFO  - 2014-06-22 20:53:44.889; org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr-webapp/webapp/},/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/webapps/solr.war
+INFO  - 2014-06-22 20:53:45.890; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=522208101
+INFO  - 2014-06-22 20:53:45.892; org.apache.solr.core.SolrCore; [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@6b724b38
+INFO  - 2014-06-22 20:53:45.893; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=1,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=8627,transaction_logs_total_number=2}
+INFO  - 2014-06-22 20:53:45.894; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2014-06-22 20:53:45.895; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2014-06-22 20:53:45.895; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2014-06-22 20:53:45.901; org.apache.solr.core.SolrCore; [collection1] Closing main searcher on request.
+INFO  - 2014-06-22 20:53:45.906; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2014-06-22 20:53:45.907; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index [CachedDir<<refCount=0;path=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index;done=false>>]
+INFO  - 2014-06-22 20:53:45.908; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data/index
+INFO  - 2014-06-22 20:53:45.909; org.apache.solr.core.CachingDirectoryFactory; looking to close /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data [CachedDir<<refCount=0;path=/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data;done=false>>]
+INFO  - 2014-06-22 20:53:45.909; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr/collection1/data
+INFO  - 2014-06-22 20:53:45.912; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/solr-webapp/webapp/},/home/u88/du25/summer_research/data-driven-policy/solr-4.8.1/example/webapps/solr.war
