@@ -21,9 +21,9 @@ public class Employee {
     	 return this.name;
      }
      public String getSex(){
-    	 return this.name;
+    	 return this.sex;
      }
      public String getAge(){
-    	 return this.name;
+    	 return this.sex;
      }
 }
